@@ -18,7 +18,7 @@
 
 
 
-## 논문 보는 곳들
+# 논문 보는 곳들
 
 1. 트위터 :
 
@@ -39,7 +39,9 @@
 4. 당신이 참고하고 싶은 다른 레퍼런스에는 어떤 것이 있는가?
 
 
-## 출처
+# 출처
 
 https://media-ai.tistory.com/7
 
+# 논문 목록
+1. [Data-driven advice for applying machine learning to bioinformatics problems](https://github.com/stockmanager1/ml-paper-review/tree/main/Data-driven%20advice%20for%20applying%20machine%20learning%20to%20bioinformatics%20problems)
