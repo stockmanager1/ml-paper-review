@@ -24,3 +24,6 @@
 ![스크린샷 2023-05-03 145502](https://user-images.githubusercontent.com/95357946/235841415-79a55d76-226d-454a-9492-b550e3e09bd7.png)
 
 음.... 역시 crossentropy가 짱이다. 약간 간소한 차이지만 여전히 cnn-svm의 성능이 약간 떨어진다.
+
+# 출처
+https://arxiv.org/abs/1712.03541
