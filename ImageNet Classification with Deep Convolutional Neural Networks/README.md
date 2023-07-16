@@ -1,6 +1,5 @@
 # 논문요약
-기존에 이미지 분류에서 거의 디폴트 값으로 사용되던 crossentropy의 사용에 의문을 가지고, 새로운 손실함수 방법론을 제시한 논문이었다. 바로 cross entropy 대신에 svm_l2를 사용하면 어떨까라는 논문이었다.
-
+현재 존재하는 모든 인공지능 모델의 기본이 되는 cnn 모델이다. gpu 병렬화, dropout, resize, centercrop, randomcrop, horizon flip등 여러 조작을 가했다. imagenet의 크기가 너무 방대한 관계로 모든 imagenet 파일을 학습하지는 못했고, 구조와 흐름만 구현하게 되었다.
 # 실험 환경
 
 실험관경은 다음과 같다.
