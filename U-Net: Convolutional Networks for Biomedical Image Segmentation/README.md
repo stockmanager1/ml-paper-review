@@ -13,28 +13,26 @@
 ![image](https://github.com/stockmanager1/ml-paper-review/assets/95357946/addb67df-056e-4b54-976a-68b2fa3fe09e)
 
 
-초기에 
-  
-|구조|cnn구조|maxpooling|stride|BatchNormalization|
-|---|---|---|---|---|
-|first convolutional layer|96개 커널, 11*11 사이즈|2*2|stride=4|사용|
-|second convolutional layer|256개 커널, 5*5 사이즈|2*2|내용 8|사용|
-|third convolutional layer|384개 커널, 3 * 3 사이즈|없음|없음|없음|
-|fourth convolutional layer|384개 커널, 3 * 3 사이즈|없음|없음|없음|
-|fifth convolutional layer|256 커널, 3 * 3 사이즈|없음|없음|사용|
-|sixth fully-connected layer|4096|없음|없음|dropout 사용|
-|seventh fully-connected layer|1000|없음|없음|dropout 사용|
-
-
-마지막에 softmax 함수를 적용해야 하는데, 정리하면서 보니까 그걸 깜박했다. 
+크게 모델은 축소 경로와 확대 경로로 나누어 집니다. 축소 경로의 경우, 각각 3 * 3 conv2d를 각 층마다 2개씩 가지고, maxpooling을 2 * 2로 가지게 됩니다. 그리고 필터가 2,4,8 이런 식으로 증가합니다. 그리고 마지막 층에 dropout을 추가합니다. 축소 경로에 대한 정의가 끝난다면, 다음으로 concatenate 함수를 통해서 축소경로와 확대경로를 연결된다.  확대 경로는 축소 경로와 마찬가지로 2개의 3 * 3 conv2d를 가지게 됩니다. 하지만 upsampling을 해야 하는데, 이걸 Conv2DTranspose를 통해 구현됩니다. 그리고 위에서 아키텍처 그림과 마찬가지로 copy and crop을 concatenate로 구현해서 수축과 확대를 연결합니다.
 ## 손실함수 및 옵티마이저
 손실함수로 cross-entropy, 옵티마이저로 sgd를 사용한다.
 
-## batch,dropout,등등
- 논문에서 batch_size를 128로 제시했다.
+## 데이터 증강
+적은 데이터 수를 극복하기 위해 overlap-tile strategy 등 여러 데이터 증강 방법을 제시했다. overlap-tile strategy이란 하나의 이미지를 여러개로 쪼개서(여기 논문에는 3 * 3 grid로 분할하고 각 patch에 대해 가우시안 정규 분포를 사용한다) 조작을 가한다. 이걸로 배치 사이즈를 1로 만든다.
 
- dropouut은 첫번쨰 완전연결층, 두번째 완전연결층에 적용한다.
 
+# 내가 처음에 구현을 실패한 이유
+
+1. concatenate 함수의 필요성과 이 함수가 정확하게 무엇을 지칭하는지 몰랐다.
+
+2. Conv2DTranspose 이 코드가 upsampling 코드인지 몰랐다.
+
+3. 이런 축소 확대 구조는 각 부분을 함수로 정의하고 구현하는 것이 매우 편리한 것을 몰랐다. 그러니까 중간에 차원에 대한 실수가 있었다.
 
 # 출처
-[https://arxiv.org/abs/1712.03541](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
+https://arxiv.org/pdf/1505.04597.pdf
+
+https://www.kaggle.com/code/mrsohelranapro/aerial-semantic-segmentation-drone-detection
+
+
+
