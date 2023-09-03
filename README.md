@@ -66,5 +66,5 @@ https://media-ai.tistory.com/7
 구현보다는 라이브러리 소개나 좀 개념적인 부분을 강조하는 논문입니다.
 | 논문 제목 | 내용 | 링크 | 
 |------|------|------|
-| Data-driven advice for applying machine learning to bioinformatics problems | 데이터마다 다른 모델을 적용해야 함. 절대적인 모델은 없다. 튜닝의 중요성. automl 사용 권 언급 | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Data-driven%20advice%20for%20applying%20machine%20learning%20to%20bioinformatics%20problems) |
+| Data-driven advice for applying machine learning to bioinformatics problems | 데이터마다 다른 모델을 적용해야 함. 절대적인 모델은 없다. 튜닝의 중요성. automl 사용 권고 언급 | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Data-driven%20advice%20for%20applying%20machine%20learning%20to%20bioinformatics%20problems) |
 | AugLy: Data Augmentations for Robustness | 페이스북에서 만든 증강 라이브러리 소개 글이다. 기능이 많기는 한데(이미지, 비디오, 글자 등) 잘 쓰는지는 모르겠다.  | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/AugLy%3A%20Data%20Augmentations%20for%20Robustness) |
