@@ -2,9 +2,6 @@
 
 인공지능논문을 공부합니다.
 
-# 2022 10월 수정 사항
-데이콘에서 이미지 영상 복구 해커톤은 준비하며 SRCNN에 대해 공부하게 되었습니다. 가장 기본적인 해상도 분석 자료였지만, 논문을 이해하는데 너무 어려움을 겪였습니다. 따라서 일단 빠르게 딥러닝에 대한 전반적인 기본 공부를 하고 논문을 읽고 구현해보는 방법으로 접근해야 할 것 같습니다. 기본적인 딥러닝 공부는 '밑바닥부터 시작하는 딥러닝'이라는 책을 사용할 예정입니다.
-
 # 논문 읽기와 ML/DL 커리어 경력에 대한 조언 by 앤드류 응
 
 1. 논문 리딩습관을 발전시키자 : 한 주에 1개씩 읽는 것으로 시작하자.
@@ -47,4 +44,27 @@
 https://media-ai.tistory.com/7
 
 # 논문 목록
-1. [Data-driven advice for applying machine learning to bioinformatics problems](https://github.com/stockmanager1/ml-paper-review/tree/main/Data-driven%20advice%20for%20applying%20machine%20learning%20to%20bioinformatics%20problems)
+
+## 이미지 classification
+이미지를 분류하는 논문 구현 목록입니다.
+| 논문 제목 | 내용 | 링크 | 언어 |
+|------|------|------|------|
+| An Architecture Combining Convolutional Neural Network (CNN) and Support Vector Machine (SVM) for Image | softmax 대신 svm을 사용하면 어떨까? 라는 내용인데 성능이 softmax보다 떨어집니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/An%20Architecture%20Combining%20Convolutional%20Neural%20Network%20(CNN)%20and%20Support%20Vector%20Machine%20(SVM)%20for%20Image) |*pytorch*|
+| ImageNet Classification with Deep Convolutional Neural Networks | 인공지능의 가장 기초인 alexnet을 구현한 논문입니다. gpu 병렬화, dropout이 소개되었습니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/ImageNet%20Classification%20with%20Deep%20Convolutional%20Neural%20Networks) |*keras*|
+| Deep Residual Learning for Image Recognition | resnet을 구현한 논문입니다. 모델의 깊이에 따른 degradation, gradient vanishing 문제를 해결하기 위해 shortcut과 잔차 학습을 소개합니다.  | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Deep%20Residual%20Learning%20for%20Image%20Recognition) |*pytorch*|
+
+
+## 이미지 segmentation 
+이미지를 분류하는 논문 구현 목록입니다.
+| 논문 제목 | 내용 | 링크 | 언어 |
+|------|------|------|------|
+| U-Net: Convolutional Networks for Biomedical Image Segmentation | softmax 대신 svm을 사용하면 어떨까? 라는 내용인데 성능이 softmax보다 떨어집니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/An%20Architecture%20Combining%20Convolutional%20Neural%20Network%20(CNN)%20and%20Support%20Vector%20Machine%20(SVM)%20for%20Image) |*keras*|
+
+
+
+## 기타
+구현보다는 라이브러리 소개나 좀 개념적인 부분을 강조하는 논문입니다.
+| 논문 제목 | 내용 | 링크 | 
+|------|------|------|
+| Data-driven advice for applying machine learning to bioinformatics problems | 데이터마다 다른 모델을 적용해야 함. 절대적인 모델은 없다. 튜닝의 중요성. automl 사용 권 언급 | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Data-driven%20advice%20for%20applying%20machine%20learning%20to%20bioinformatics%20problems) |
+| AugLy: Data Augmentations for Robustness | 페이스북에서 만든 증강 라이브러리 소개 글이다. 기능이 많기는 한데(이미지, 비디오, 글자 등) 잘 쓰는지는 모르겠다.  | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/AugLy%3A%20Data%20Augmentations%20for%20Robustness) |
