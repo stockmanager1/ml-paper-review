@@ -60,7 +60,11 @@ https://media-ai.tistory.com/7
 |------|------|------|------|
 | U-Net: Convolutional Networks for Biomedical Image Segmentation | u자 형태의 구조로 downsampling으로 이미지 피처를 축소하고 upsampling으로 이미지를 복원하면서 segmentation을 진행한다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/U-Net%3A%20Convolutional%20Networks%20for%20Biomedical%20Image%20Segmentation) |*tensorflow*|
 
-
+## 시계열  
+시계열 모델
+| 논문 제목 | 내용 | 링크 | 언어 |
+|------|------|------|------|
+| Long term 5G network traffic forecasting via modeling non-stationarity with deep learning |  | [링크](https://github.com/stockmanager1/Diviner-Nonstationary-time-series-forecasting/tree/main) |*pytorch(저자의 코드를 해석)*|
 
 ## 기타
 구현보다는 라이브러리 소개나 좀 개념적인 부분을 강조하는 논문입니다.
