@@ -58,7 +58,7 @@ https://media-ai.tistory.com/7
 이미지를 분류하는 논문 구현 목록입니다.
 | 논문 제목 | 내용 | 링크 | 언어 |
 |------|------|------|------|
-| U-Net: Convolutional Networks for Biomedical Image Segmentation | u자 형태의 구조로 downsampling으로 이미지 피처를 축소하고 upsampling으로 이미지를 복원하면서 segmentation을 진행한다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/U-Net%3A%20Convolutional%20Networks%20for%20Biomedical%20Image%20Segmentation) |*tensorflow*|
+| U-Net: Convolutional Networks for Biomedical Image Segmentation | u자 형태의 구조로 downsampling으로 이미지 피처를 축소하고 upsampling으로 이미지를 복원하면서 segmentation을 진행한다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/U-Net%20Convolutional%20Networks%20for%20Biomedical%20Image%20Segmentation) |*tensorflow*|
 
 ## 시계열  
 시계열 모델
