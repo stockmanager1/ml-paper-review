@@ -64,7 +64,7 @@ https://media-ai.tistory.com/7
 시계열 모델
 | 논문 제목 | 내용 | 링크 | 언어 |
 |------|------|------|------|
-| Long term 5G network traffic forecasting via modeling non-stationarity with deep learning |  | [링크](https://github.com/stockmanager1/Diviner-Nonstationary-time-series-forecasting/tree/main) |*pytorch(저자의 코드를 개조)*|
+| Long term 5G network traffic forecasting via modeling non-stationarity with deep learning | smoothing attention을 통해서 데이터를 스케일링해 비정형성 데이터를 stable data로 변경, difference attention으로 각 타임 스탬프 간의 상관관계를 파악해 학습을 진행 | [링크](https://github.com/stockmanager1/Diviner-Nonstationary-time-series-forecasting/tree/main) |*pytorch(저자의 코드를 개조)*|
 
 ## 기타
 구현보다는 라이브러리 소개나 좀 개념적인 부분을 강조하는 논문입니다.
