@@ -46,7 +46,6 @@ https://media-ai.tistory.com/7
 # 논문 목록
 
 ## 이미지 classification
-이미지를 분류하는 논문 구현 목록입니다.
 | 논문 제목 | 내용 | 링크 | 언어 |
 |------|------|------|------|
 | An Architecture Combining Convolutional Neural Network (CNN) and Support Vector Machine (SVM) for Image | softmax 대신 svm을 사용하면 어떨까? 라는 내용인데 성능이 softmax보다 떨어집니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/An%20Architecture%20Combining%20Convolutional%20Neural%20Network%20(CNN)%20and%20Support%20Vector%20Machine%20(SVM)%20for%20Image) |*pytorch*|
@@ -55,13 +54,17 @@ https://media-ai.tistory.com/7
 
 
 ## 이미지 segmentation 
-이미지를 분류하는 논문 구현 목록입니다.
 | 논문 제목 | 내용 | 링크 | 언어 |
 |------|------|------|------|
 | U-Net: Convolutional Networks for Biomedical Image Segmentation | u자 형태의 구조로 downsampling으로 이미지 피처를 축소하고 upsampling으로 이미지를 복원하면서 segmentation을 진행한다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/U-Net%20Convolutional%20Networks%20for%20Biomedical%20Image%20Segmentation) |*tensorflow*|
 
+
+## 자연어 처리
+| 논문 제목 | 내용 | 링크 | 언어 |
+|------|------|------|------|
+| Attention Is All You Need | self_attention을 이용해서 모든 sequence의 position에 관여할 수 있게 한다. 그리고 multi-head를 이용해서 더 정교한 att 알고리즘을 사용한다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Attention%20Is%20All%20You%20Need) |*pytorch*|
+
 ## 시계열  
-시계열 모델
 | 논문 제목 | 내용 | 링크 | 언어 |
 |------|------|------|------|
 | Long term 5G network traffic forecasting via modeling non-stationarity with deep learning | smoothing attention을 통해서 데이터를 스케일링해 비정형성 데이터를 stable data로 변경, difference attention으로 각 타임 스탬프 간의 상관관계를 파악해 학습을 진행 마지막에 conv 층을 이용해 출력값을 형성 | [링크](https://github.com/stockmanager1/Diviner-Nonstationary-time-series-forecasting/tree/main) |*pytorch(저자의 코드를 개조)*|
