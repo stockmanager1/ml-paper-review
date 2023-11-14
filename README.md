@@ -51,7 +51,7 @@ https://media-ai.tistory.com/7
 | An Architecture Combining Convolutional Neural Network (CNN) and Support Vector Machine (SVM) for Image | softmax 대신 svm을 사용하면 어떨까? 라는 내용인데 성능이 softmax보다 떨어집니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/An%20Architecture%20Combining%20Convolutional%20Neural%20Network%20(CNN)%20and%20Support%20Vector%20Machine%20(SVM)%20for%20Image) |*pytorch*|
 | ImageNet Classification with Deep Convolutional Neural Networks | 인공지능의 가장 기초인 alexnet을 구현한 논문입니다. gpu 병렬화, dropout이 소개되었습니다. | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/ImageNet%20Classification%20with%20Deep%20Convolutional%20Neural%20Networks) |*keras*|
 | Deep Residual Learning for Image Recognition | resnet을 구현한 논문입니다. 모델의 깊이에 따른 degradation, gradient vanishing 문제를 해결하기 위해 shortcut과 잔차 학습을 소개합니다.  | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Deep%20Residual%20Learning%20for%20Image%20Recognition) |*pytorch*|
-
+| Going deeper with convolutions |  | [링크](https://github.com/stockmanager1/ml-paper-review/tree/main/Going%20deeper%20with%20convolutions) |*pytorch*|
 
 ## 이미지 segmentation 
 | 논문 제목 | 내용 | 링크 | 언어 |
